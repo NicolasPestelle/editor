@@ -2,16 +2,16 @@ package org.ulco;
 
 import java.util.Vector;
 
-public class Group {
+public class Group extends GraphicsObject {
 
     public Group() {
-        m_groupList = new  Vector<Group>();
+        //m_groupList = new  Vector<Group>();
         m_objectList = new Vector<GraphicsObject>();
         m_ID = ++ID.ID;
     }
 
     public Group(String json) {
-        m_groupList = new  Vector<Group>();
+        //m_groupList = new  Vector<Group>();
         m_objectList = new Vector<GraphicsObject>();
         String str = json.replaceAll("\\s+","");
         int objectsIndex = str.indexOf("objects");
@@ -24,14 +24,14 @@ public class Group {
 
     public void add(Object object) {
         if (object instanceof Group) {
-            addGroup((Group)object);
-        } else {
             addObject((GraphicsObject)object);
+        } else {
+            addObject((GraphicsObject) object);
         }
     }
 
     private void addGroup(Group group) {
-        m_groupList.add(group);
+        m_objectList.add(group);
     }
 
     private void addObject(GraphicsObject object) {
@@ -58,6 +58,15 @@ public class Group {
         return m_ID;
     }
 
+    @Override
+    boolean isClosed(Point pt, double distance) {
+      /*  for (int i = 0; i < m_objectList.size(); i++){
+            on appelle isClosed pour chaque enfant
+    }*/
+
+    return false;
+    }
+
     public void move(Point delta) {
         Group g = new Group();
 
@@ -66,11 +75,11 @@ public class Group {
 
             element.move(delta);
         }
-        for (Object o : m_groupList) {
+/*        for (Object o : m_groupList) {
             Group element = (Group) (o);
 
             element.move(delta);
-        }
+        }*/
     }
 
     private int searchSeparator(String str) {
@@ -137,12 +146,13 @@ public class Group {
     }
 
     public int size() {
-        int size = m_objectList.size();
+        int size = 0;
 
-        for (int i = 0; i < m_groupList.size(); ++i) {
-            Group element = m_groupList.elementAt(i);
+        for (int i = 0; i < m_objectList.size(); ++i) {
+            GraphicsObject element =  m_objectList.elementAt(i);
 
-            size += element.size();
+                size += element.size();
+
         }
         return size;
     }
