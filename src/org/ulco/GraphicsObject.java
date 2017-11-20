@@ -13,6 +13,8 @@ abstract public class GraphicsObject {
 
     abstract boolean isClosed(Point pt, double distance);
 
+    boolean isSimple(){return true;}
+
     public int size(){return 1;}
 
     abstract void move(Point delta);
