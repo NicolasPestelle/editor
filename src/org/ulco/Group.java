@@ -5,9 +5,9 @@ import java.util.Vector;
 public class Group extends GraphicsObject {
 
     public Group() {
-        //m_groupList = new  Vector<Group>();
+        super();
         m_objectList = new Vector<GraphicsObject>();
-        m_ID = ++ID.ID;
+
     }
 
     public Group(String json) {
@@ -20,6 +20,13 @@ public class Group extends GraphicsObject {
 
         parseObjects(str.substring(objectsIndex + 9, groupsIndex - 2));
         parseGroups(str.substring(groupsIndex + 8, endIndex - 1));
+
+       /* super();
+        //m_groupList = new  Vector<Group>();
+        //m_groupList = new  Vector<Group>();
+        m_objectList = new Vector<GraphicsObject>();
+        m_objectList = new Vector<GraphicsObject>();
+        String str = json.replaceAll("\\s+","");*/
     }
 
     public void add(Object object) {
@@ -46,11 +53,7 @@ public class Group extends GraphicsObject {
 
             g.addObject(element.copy());
         }
-/*        for (Object o : m_groupList) {
-            Group element = (Group) (o);
 
-            g.addObject(element.copy());
-        }*/
         return g;
     }
 
