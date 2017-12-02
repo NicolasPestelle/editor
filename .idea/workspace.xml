@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3024997a-0a3f-449b-8597-bfc8727e1869" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Group.java" afterPath="$PROJECT_DIR$/src/org/ulco/Group.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" afterPath="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/ID.java" afterPath="$PROJECT_DIR$/src/org/ulco/ID.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Layer.java" afterPath="$PROJECT_DIR$/src/org/ulco/Layer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/DocumentTest.java" afterPath="$PROJECT_DIR$/src/test/DocumentTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/LayerTest.java" afterPath="$PROJECT_DIR$/src/test/LayerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="Layer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/ulco/Layer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="101" column="35" lean-forward="false" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -38,9 +36,24 @@
       <file leaf-file-name="LayerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/LayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="112">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ID.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/ulco/ID.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#163#164#0" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,9 +61,12 @@
       <file leaf-file-name="GraphicsObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/ulco/GraphicsObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <element signature="e#86#87#0" expanded="true" />
+                <element signature="e#119#120#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/ulco/Group.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+              <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -100,10 +116,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/org/ulco/JSON.java" />
         <option value="$PROJECT_DIR$/src/test/DocumentTest.java" />
-        <option value="$PROJECT_DIR$/src/org/ulco/Layer.java" />
         <option value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/junit/framework/TestCase.class" />
-        <option value="$PROJECT_DIR$/src/test/LayerTest.java" />
         <option value="$PROJECT_DIR$/src/org/ulco/Group.java" />
+        <option value="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" />
+        <option value="$PROJECT_DIR$/src/org/ulco/ID.java" />
+        <option value="$PROJECT_DIR$/src/test/LayerTest.java" />
+        <option value="$PROJECT_DIR$/src/org/ulco/Layer.java" />
       </list>
     </option>
   </component>
@@ -151,12 +169,6 @@
               <item name="editor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ulco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,7 +345,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512246788768</updated>
-      <workItem from="1512246795424" duration="1781000" />
+      <workItem from="1512246795424" duration="3107000" />
     </task>
     <servers />
   </component>
@@ -346,9 +358,6 @@
     </history-entry>
     <history-entry file="GroupTest_testCopy - 2017.12.02 at 21h 57m 10s.xml">
       <configuration name="GroupTest.testCopy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test - 2017.12.02 at 21h 36m 37s.xml">
-      <configuration name="Test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Test - 2017.12.02 at 21h 48m 08s.xml">
       <configuration name="Test" configurationId="JUnit" />
@@ -365,9 +374,15 @@
     <history-entry file="Test - 2017.12.02 at 21h 58m 03s.xml">
       <configuration name="Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test - 2017.12.02 at 22h 17m 51s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2017.12.02 at 22h 24m 15s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1781000" />
+    <option name="totallyTimeSpent" value="3107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
@@ -461,31 +476,47 @@
     <entry file="file://$PROJECT_DIR$/src/org/ulco/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ulco/GraphicsObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#119#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ulco/ID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/LayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="112">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ulco/Layer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="101" column="35" lean-forward="false" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
