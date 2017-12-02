@@ -9,8 +9,8 @@ public class Layer {
     }
 
     public Layer(String json) {
-        m_list= new Vector<GraphicsObject>();
-        String str = json.replaceAll("\\s+","");
+        m_list = new Vector<GraphicsObject>();
+        String str = json.replaceAll("\\s+", "");
         int objectsIndex = str.indexOf("objects");
         int endIndex = str.lastIndexOf("}");
 
@@ -77,17 +77,6 @@ public class Layer {
         }
     }
 
-   /* public GraphicsObjects select(Point pt, double distance) {
-        GraphicsObjects list = new GraphicsObjects();
-
-        for (GraphicsObject object : m_list) {
-            if (object.isClosed(pt, distance)) {
-                list.add(object);
-            }
-        }
-        return list;
-    }*/
-
     public Vector<GraphicsObject> getM_list() {
         return m_list;
     }
@@ -103,7 +92,7 @@ public class Layer {
                 str += ", ";
             }*/
 
-            if(element.isSimple()) {
+            if (element.isSimple()) {
 
                 str += element.toJson();
                 if (i < m_list.size() - 1) {
@@ -116,7 +105,7 @@ public class Layer {
 
         for (int i = 0; i < m_list.size(); ++i) {
             GraphicsObject element = m_list.elementAt(i);
-            if(!element.isSimple()) {
+            if (!element.isSimple()) {
                 str += element.toJson();
             }
         }

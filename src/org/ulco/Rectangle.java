@@ -8,7 +8,7 @@ public class Rectangle extends GraphicsObject {
     }
 
     public Rectangle(String json) {
-        String str = json.replaceAll("\\s+","");
+        String str = json.replaceAll("\\s+", "");
         int centerIndex = str.indexOf("center");
         int heightIndex = str.indexOf("height");
         int widthIndex = str.indexOf("width");
@@ -23,7 +23,9 @@ public class Rectangle extends GraphicsObject {
         return new Rectangle(m_origin.copy(), m_height, m_width);
     }
 
-    public Point getOrigin() { return m_origin; }
+    public Point getOrigin() {
+        return m_origin;
+    }
 
     public boolean isClosed(Point pt, double distance) {
         Point center = new Point(m_origin.getX() + m_width / 2, m_origin.getY() + m_height / 2);
@@ -32,7 +34,9 @@ public class Rectangle extends GraphicsObject {
                 ((center.getY() - pt.getY()) * (center.getY() - pt.getY()))) <= distance;
     }
 
-    void move(Point delta) { m_origin.move(delta); }
+    void move(Point delta) {
+        m_origin.move(delta);
+    }
 
     public String toJson() {
         return "{ type: rectangle, center: " + m_origin.toJson() + ", height: " + this.m_height + ", width: " + this.m_width + " }";

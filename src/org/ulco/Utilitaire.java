@@ -1,7 +1,7 @@
 package org.ulco;
 
 public class Utilitaire {
-    // Celle de layers
+    //layers
     public static GraphicsObjects select(Point pt, double distance, Layer layer) {
         GraphicsObjects list = new GraphicsObjects();
         for (GraphicsObject object : layer.getM_list()) {
@@ -12,7 +12,7 @@ public class Utilitaire {
         return list;
     }
 
-    // celle de document
+    //document
     public static GraphicsObjects select(Point pt, double distance, Document doc) {
         GraphicsObjects list = new GraphicsObjects();
 

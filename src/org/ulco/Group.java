@@ -11,7 +11,6 @@ public class Group extends GraphicsObject {
     }
 
     public Group(String json) {
-        //m_groupList = new  Vector<Group>();
         m_objectList = new Vector<GraphicsObject>();
         String str = json.replaceAll("\\s+", "");
         int objectsIndex = str.indexOf("objects");
@@ -20,13 +19,6 @@ public class Group extends GraphicsObject {
 
         parseObjects(str.substring(objectsIndex + 9, groupsIndex - 2));
         parseGroups(str.substring(groupsIndex + 8, endIndex - 1));
-
-       /* super();
-        //m_groupList = new  Vector<Group>();
-        //m_groupList = new  Vector<Group>();
-        m_objectList = new Vector<GraphicsObject>();
-        m_objectList = new Vector<GraphicsObject>();
-        String str = json.replaceAll("\\s+","");*/
     }
 
     public void add(Object object) {
@@ -37,10 +29,6 @@ public class Group extends GraphicsObject {
         }
     }
 
-    /*private void addGroup(Group group) {
-        m_objectList.add(group);
-    }
-*/
     private void addObject(GraphicsObject object) {
         m_objectList.add(object);
     }
@@ -63,9 +51,6 @@ public class Group extends GraphicsObject {
 
     @Override
     boolean isClosed(Point pt, double distance) {
-      /*  for (int i = 0; i < m_objectList.size(); i++){
-            on appelle isClosed pour chaque enfant
-    }*/
 
         return false;
     }
@@ -78,11 +63,6 @@ public class Group extends GraphicsObject {
 
             element.move(delta);
         }
-/*        for (Object o : m_groupList) {
-            Group element = (Group) (o);
-
-            element.move(delta);
-        }*/
     }
 
     private int searchSeparator(String str) {
@@ -232,7 +212,6 @@ public class Group extends GraphicsObject {
         return i;
     }
 
-    //private Vector<Group> m_groupList;
     private Vector<GraphicsObject> m_objectList;
     private int m_ID;
 }
